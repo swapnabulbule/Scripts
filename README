@@ -1,0 +1,22 @@
+Scripts of Kernel_installing and busybox_rootfs
+
+File Name:
+	kernel_compile_script.sh
+	busybox_rootfs_script.sh
+
+How to Run:
+	sudo chown root.root kernel_compile_script.sh
+	sudo chmod +x kernel_compile_script.sh
+	sudo chmod +x busybox_rootfs_script.sh
+	./kernel_compile_script.sh
+
+Description:
+	kernel_compile_script.sh:
+		This script downloads the source code using wget. so,you might required to change https_proxy.This script is only for linux-3.18.22 package. Called to busybox is automated from script itself.
+	
+	busybox_rootfs_script.sh
+		This script downloads and installs busybox, then creates rootfs image.
+
+Prerequiste: 
+	Qemu must be installed.
+
